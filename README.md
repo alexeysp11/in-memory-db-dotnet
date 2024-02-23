@@ -1,4 +1,4 @@
-# in-memory-database
+# in-memory-db-dotnet
 
 [English](README.md) | [Русский](README.ru.md)
 
