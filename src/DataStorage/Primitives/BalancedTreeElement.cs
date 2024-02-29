@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace WorkflowLib.InMemoryDatabase.DataStorage.Primitives;
 
+/// <summary>
+/// 
+/// </summary>
 public class BalancedTreeElement<T>
 {
     public T Data { get; set; }
