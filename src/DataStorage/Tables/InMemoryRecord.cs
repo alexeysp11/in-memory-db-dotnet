@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 
 namespace WorkflowLib.InMemoryDatabase.DataStorage.Tables;
@@ -7,7 +8,7 @@ namespace WorkflowLib.InMemoryDatabase.DataStorage.Tables;
 /// </summary>
 public class InMemoryRecord<T> where T : IComparable<T>
 {
-    private Dictionary<InMemoryColumn<T>, InMemoryCell<T>> m_values; 
+    private ConcurrentDictionary<InMemoryColumn<T>, InMemoryCell<T>> m_values; 
     private IReadOnlyDictionary<InMemoryColumn<T>, InMemoryCell<T>> m_cachedValues; 
 
     public IReadOnlyDictionary<InMemoryColumn<T>, InMemoryCell<T>> Values
