@@ -5,7 +5,7 @@ namespace WorkflowLib.InMemoryDatabase.DataStorage.DialectConversions;
 /// <summary>
 /// 
 /// </summary>
-public class InMemoryTable2ObjectCollection
+public class InMemoryTable2Objects
 {
     // 
 }
